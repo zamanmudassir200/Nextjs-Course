@@ -1,5 +1,11 @@
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer>
+      <div className="max-w-[1200px] mx-auto bg-white p-2 rounded-md text-center text-xl">
+        footer
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
