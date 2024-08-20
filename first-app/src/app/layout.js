@@ -13,9 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-purple-700">
-        <Navbar />
-        {children}
-        <Footer />
+        <section className="text-white p-4 max-w-[1300px] mx-auto min-h-[calc(100vh-150px)]">
+          <Navbar />
+          {children}
+          <Footer />
+        </section>
       </body>
     </html>
   );
