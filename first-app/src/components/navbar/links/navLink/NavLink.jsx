@@ -7,14 +7,14 @@ const NavLink = ({ link }) => {
 
   return (
     <Link
-      href={link.path}
+      href={link?.path}
       className={`p-4 ${
-        pathname === link.path
+        pathname === link?.path
           ? "bg-purple-500 text-white font-bold rounded-lg"
           : ""
       }`}
     >
-      {link.title}
+      {link?.title}
     </Link>
   );
 };

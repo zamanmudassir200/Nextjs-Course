@@ -1,10 +1,16 @@
+import { notFound } from "next/navigation";
 import React from "react";
 
-const ReviewId = ({
+const ReviewDetail = ({
   params,
 }: {
   params: { productId: string; reviewId: string };
 }) => {
+  {
+    if (Number(params.reviewId) > 1000) {
+      notFound();
+    }
+  }
   return (
     <h1>
       {Number(params.reviewId) > 1 ? "Reviews" : "Review"} {params.reviewId} for
@@ -13,4 +19,4 @@ const ReviewId = ({
   );
 };
 
-export default ReviewId;
+export default ReviewDetail;
